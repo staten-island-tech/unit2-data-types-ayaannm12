@@ -1,6 +1,12 @@
-tip = 100
-service = input("how was your service,bad good or great?")
-if service =="bad":print("sorry to hear that, we'll issue a 15% tip")
-if service =="good": print("great, well we'll issue a 20% tip")
-elif service == "great": print("amazing, we'll issue a 25% tip!")
-else: print("sorry thats not a valid answer please answer 'bad' 'good' or 'great'")
+def gcf(x ,y):
+    if x < y:
+        smaller = x
+    else:
+        smaller = y
+    for i in range(1, smaller + 1):
+     if x % i == 0 and y % i == 0:
+        gcf = i
+    return(gcf)
+number1 = 27
+number2 = 9
+print("gcf of ", number1, "and", number2, "is", gcf(number1, number2))
